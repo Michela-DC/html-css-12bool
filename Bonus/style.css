@@ -24,7 +24,7 @@ body{
 .cloud:nth-child(2){
     position: absolute;
     top: 150px;
-    left: 400px;
+    left: 600px;
 }
 
 .cloud:nth-child(3){
@@ -40,40 +40,40 @@ body{
     background-color: white;
 }
 
-.col-12{
+.cloud .col-12{
     height: 10px;
     display: flex;
 }
 
-.col-12:first-child{
+.cloud .col-12:first-child{
     justify-content: space-around;
 }
 
-.col-12:nth-child(2){
+.cloud .col-12:nth-child(2){
     justify-content: space-around;
 }
 
-.col-12:nth-child(3){
+.cloud .col-12:nth-child(3){
     justify-content: space-around;
 }
 
-.col-12:nth-child(4){
+.cloud .col-12:nth-child(4){
     justify-content: space-around;
 }
 
-.col-12:nth-child(5){
+.cloud .col-12:nth-child(5){
     justify-content: space-around;
 }
 
-.col-12:nth-child(6), .col-12:last-child{
+.cloud .col-12:nth-child(6), .cloud .col-12:last-child{
     justify-content: center;
 }
 
-.col-border-top{
+.cloud .col-border-top{
     border-top: 2px solid black;
 }
 
-.col-border-bottom{
+.cloud .col-border-bottom{
     border-bottom: 2px solid black;
 }
 
@@ -105,7 +105,7 @@ body{
     width: 270px;
     position: absolute;
     bottom: 100px;
-    left: 420px;
+    left: 450px;
 }
 
 .hill .row{
@@ -167,7 +167,7 @@ body{
 .flag-container{
     position: absolute;
     bottom: 100px;
-    left: 700px;
+    right: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,6 +209,72 @@ body{
     background-color: #88D606;
     border: 1px solid black;
 }
+
+/* Castle */
+
+.castle{
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+}
+
+.castle .col-12{
+    height: 10px;
+}
+
+.castle-top, .castle-body{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.castle-top .col-12{
+    display: flex;
+    justify-content: space-between;
+}
+
+.castle-top .col-12 div[class^="col"]{
+    border: 1px solid black;
+    background-color: #DE5918;
+}
+
+
+.castle-body{
+    display: flex;
+    background-color: #DE5918;
+}
+
+.castle-body .col-6{
+    width: 50px;
+}
+
+.block{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block div[class^="col"]{
+    border: 1px solid black;
+    background-color: #DE5918;
+}
+
+
+.castle-bottom{
+    width: 170px;
+}
+
+.castle-bottom .block .door{
+    display: flex;
+    border: none;
+}
+
+/* .door{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+} */
+
+
 
 /* DEBUG */
 
