@@ -80,7 +80,7 @@ body{
 /* PYRAMID */
 
 .pyramid{
-    width: 38%;
+    width:450px;
     position: absolute;
     bottom: 100px;
     left: -40px;
@@ -98,6 +98,70 @@ body{
     border-top: 5px solid white;
     background-color: #DE5918;
 }
+
+/* Hill */
+
+.hill{
+    border: 2px solid white;
+    width: 270px;
+    position: absolute;
+    bottom: 100px;
+    left: 420px;
+}
+
+.hill .col-12{
+    display: flex;
+    justify-content: center;
+    height: 14px;
+}
+
+.hill .col-12 div[class^="col"]{
+    background-color: #39B902;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 50px;
+}
+
+.hill .col-3, .hill .col-6{
+    position: relative;   
+}
+
+.small-spot{
+    height: 6px;
+    width: 5px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;   
+}
+
+.big-spot{
+    height: 8px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.col-3 .small-spot{
+    right: 30px;
+    top: 5px;
+}
+
+.col-3 .big-spot{
+    right: 20px;
+    top: 3px;
+}
+
+.col-6 .small-spot{
+    left: 35px;
+    top: 5px;
+}
+
+.col-6 .big-spot{
+    left: 45px;
+    top: 3px;
+}
+
 
 
 
