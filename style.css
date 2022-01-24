@@ -21,13 +21,21 @@ div[class^="col"]{
     background-color: #006CFA;
     border: 1px solid white;
     color: white;
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
 }
 
-.col-6.flex{
+.row-2 > div[class^="col"]{
+    height: 50px;
+}
+
+div[class^="col"].col-flex-nest{
     display: flex;
-    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: center;
+    height: 70px;
 }
 
 .nested{
@@ -37,6 +45,6 @@ div[class^="col"]{
     padding: 10px 0;
 }
 
-.row-2 > div[class^="col"]{
-    height: 50px;
+.row-2 .nested{
+    height: 40px;
 }
