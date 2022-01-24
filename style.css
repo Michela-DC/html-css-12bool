@@ -55,10 +55,6 @@ div[class^="col"].col-flex-nest{
     display: flex;
 }
 
-.row-3{
-    height: 100px;
-}
-
 .col-big{
     height: 100px;
 }
@@ -75,4 +71,16 @@ div[class^="col"].col-flex-nest{
 .alignment .row:nth-child(7){
     display: flex;
     align-items: end;
+}
+
+/* Section 6 - Justify Content */
+
+.justify-content .row:nth-child(3) .col-flex-nest{
+    display: flex;
+    justify-content: space-around;
+}
+
+.justify-content .row:nth-child(5) .col-flex-nest{
+    display: flex;
+    justify-content: space-between
 }
