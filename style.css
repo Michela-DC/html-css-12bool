@@ -30,12 +30,11 @@ div[class^="col"]{
     height: 50px;
 }
 
-div[class^="col"].col-flex-nest{
+.col-nest .row-nested{
     display: flex;
     padding-right: 15px;
     padding-left: 15px;
     align-items: center;
-    height: 70px;
 }
 
 .nested{
@@ -45,7 +44,7 @@ div[class^="col"].col-flex-nest{
     padding: 10px 0;
 }
 
-.row-2 .nested{
+.nested.no-content{
     height: 40px;
 }
 
@@ -75,12 +74,12 @@ div[class^="col"].col-flex-nest{
 
 /* Section 6 - Justify Content */
 
-.justify-content .row:nth-child(3) .col-flex-nest{
+.justify-content .row:nth-child(3) .row-nested{
     display: flex;
     justify-content: space-around;
 }
 
-.justify-content .row:nth-child(5) .col-flex-nest{
+.justify-content .row:nth-child(5) .row-nested{
     display: flex;
     justify-content: space-between
 }
