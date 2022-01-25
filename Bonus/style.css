@@ -32,39 +32,39 @@ body{
     right: 20px;
 }
 
-.cloud .col-12 div[class^="col"]{
+.cloud .row div[class^="col"]{
     border-right: 2px solid black;
     border-left: 2px solid black;
     border-radius: 20px;
     background-color: white;
 }
 
-.cloud .col-12{
+.cloud .row{
     height: 10px;
     display: flex;
 }
 
-.cloud .col-12:first-child{
+.cloud .row:first-child{
     justify-content: space-around;
 }
 
-.cloud .col-12:nth-child(2){
+.cloud .row:nth-child(2){
     justify-content: space-around;
 }
 
-.cloud .col-12:nth-child(3){
+.cloud .row:nth-child(3){
     justify-content: space-around;
 }
 
-.cloud .col-12:nth-child(4){
+.cloud .row:nth-child(4){
     justify-content: space-around;
 }
 
-.cloud .col-12:nth-child(5){
+.cloud .row:nth-child(5){
     justify-content: space-around;
 }
 
-.cloud .col-12:nth-child(6), .cloud .col-12:last-child{
+.cloud .row:nth-child(6), .cloud .row:last-child{
     justify-content: center;
 }
 
@@ -85,12 +85,12 @@ body{
     left: -40px;
 }
 
-.pyramid div[class^="col"]{
+.pyramid .row{
     display: flex;
     height: 40px;
 }
 
-.pyramid-row .block{
+.col-pyramid .block{
     border-right: 5px solid black;
     border-bottom: 5px solid black;
     border-left: 5px solid white;
@@ -224,7 +224,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
     left: 70%;
 }
 
-.castle .col-12{
+.castle .row{
     height: 10px;
 }
 
@@ -233,12 +233,12 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
     margin: 0 auto;
 }
 
-.castle-top .col-12{
+.castle-top .row, .block{
     display: flex;
     justify-content: space-between;
 }
 
-.castle-top .col-12 div[class^="col"]{
+.castle-top .row div[class^="col"]{
     border: 1px solid black;
     background-color: #DE5918;
 }
@@ -269,7 +269,15 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
     width: 180px;
 }
 
-.castle-bottom .block .door{
+.castle-bottom .door-top{
+    width: 38%;
+}
+
+.castle-bottom .door{
+    width: 34%;
+}
+
+.door, .door-top{
     display: flex;
     border: none;
 }
@@ -291,9 +299,10 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
     display: flex;
 }
 
-.bottom .col-1 .col-6{
+.bottom .col-1 .row-nested{
     border: 1px solid black;
     position: relative;
+    width: 50%;
 }
 
 .crack{
@@ -302,7 +311,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
     background-color: black;
 }
 
-.bottom .col-6 .crack:first-child{
+.bottom .row .crack:first-child{
     margin-left: 1px solid black
 }
 
@@ -316,7 +325,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
     left: 50%;
 }
 
-.super-mario .flex-nest{
+.super-mario .row-nested{
     width: 100%;
     display: flex;
 }
@@ -348,4 +357,5 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 .yellow{
     background-color: yellow;
 }
+
 
