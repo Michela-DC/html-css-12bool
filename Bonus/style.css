@@ -81,7 +81,7 @@ body{
 .pyramid{
     width:450px;
     position: absolute;
-    bottom: 100px;
+    bottom: 104px;
     left: -40px;
 }
 
@@ -103,14 +103,14 @@ body{
 .hill{
     width: 270px;
     position: absolute;
-    bottom: 100px;
+    bottom: 104px;
     left: 450px;
 }
 
 .hill-2{
     width: 220px;
     position: absolute;
-    bottom: 100px;
+    bottom: 104px;
     right: 0;
 }
 
@@ -172,7 +172,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 
 .flag-container{
     position: absolute;
-    bottom: 100px;
+    bottom: 104px;
     left: 60%;
     display: flex;
     flex-direction: column;
@@ -220,7 +220,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 
 .castle{
     position: absolute;
-    bottom: 100px;
+    bottom: 104px;
     left: 70%;
 }
 
