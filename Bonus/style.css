@@ -12,7 +12,6 @@ body{
 
 .cloud{
     width: 200px;
-    position: absolute;
 }
 
 .cloud:first-child{
@@ -23,13 +22,13 @@ body{
 
 .cloud:nth-child(2){
     position: absolute;
-    top: 160px;
-    left: 600px;
+    top: 120px;
+    right: 640px;
 }
 
 .cloud:nth-child(3){
     position: absolute;
-    top: 120px;
+    top: 170px;
     right: 20px;
 }
 
@@ -174,7 +173,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 .flag-container{
     position: absolute;
     bottom: 100px;
-    right: 570px;
+    left: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,8 +196,8 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 }
 
 .flag{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 20px;
     right: 23px;
@@ -222,7 +221,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 .castle{
     position: absolute;
     bottom: 100px;
-    right: 230px;
+    left: 70%;
 }
 
 .castle .col-12{
@@ -230,7 +229,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 }
 
 .castle-top, .castle-body{
-    width: 100px;
+    width: 110px;
     margin: 0 auto;
 }
 
@@ -267,7 +266,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 
 
 .castle-bottom{
-    width: 170px;
+    width: 180px;
 }
 
 .castle-bottom .block .door{
@@ -275,6 +274,7 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
     border: none;
 }
 
+/* bottom */
 
 .bottom{
     width: 100%;
@@ -283,13 +283,8 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 }
 
 .bottom .row{
-    height: 50px;
     display: flex;
-    background-color: #DE5918;
-}
-
-.bottom .row div[class^="col"]{
-    height: 50px;
+    background-color: #DC722A;
 }
 
 .bottom .col-1{
@@ -302,18 +297,55 @@ div[class^="hill"] .col-3, div[class^="hill"] .col-6{
 }
 
 .crack{
-    height: 20px;
+    height: 25px;
     width: 2px;
     background-color: black;
 }
 
 .bottom .col-6 .crack:first-child{
-    position: absolute;
-    left: 30px;
+    margin-left: 1px solid black
 }
 
-.bottom .col-6 .crack:nth-child(2){
+/* super-mario */
+
+.super-mario{
+    width: 70px;
+    height: 100px;
     position: absolute;
-    bottom: 0;
-    left: 15px;
+    bottom: 220px;
+    left: 50%;
 }
+
+.super-mario .flex-nest{
+    width: 100%;
+    display: flex;
+}
+
+.super-mario div[class^="col"]{
+    height: 3.5px;
+}
+
+.red{
+    background-color: #E32020;
+}
+
+.skin{
+    background-color: #FFBF8F;
+}
+
+.brown{
+    background-color: #62483A;
+}
+
+.black{
+    background-color: black;
+}
+
+.background{
+    background-color: #5C94FC;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
